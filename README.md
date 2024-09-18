@@ -4,7 +4,7 @@
 
 # 重要说明！！！
 
-请勿直接修改 .env，然后提交到 github，源码仓库是公开的，别人可以直接看到你的账号密码。因为错误使用本仓库导致账号密码泄漏，本人概不负责！！！
+请勿直接修改 .env，然后提交到 github，源码仓库必须公开，别人可以直接看到你的账号密码。因为错误使用本仓库导致账号密码泄漏，本人概不负责！！！
 
 ## **目录**
 
@@ -22,9 +22,9 @@
 
 ### 设置账号密码
 
-新版本的 git Action 需要创建 environment 来配合使用，创建一个名为 user 的环境。
+新版本的 git Action 需要公开仓库并创建 environment 来配合使用，创建一个名为 user 的环境。
 ![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/env.png)
-创建好后编辑 user 环境，添加变量 TY_ACCOUNTS, userName 和 password 为你的天翼账号和密码,可以添加多个账号如[{"userName":"账号 1","password":"账号 1 的密码"},{"userName":"账号 2","password":"账号 2 的密码"}]
+创建好后编辑 user 环境，添加变量 TY_ACCOUNTS, userName 和 password 为你的天翼账号和密码[{"userName":"账号","password":"密码"}],可以添加多个账号如[{"userName":"账号 1","password":"账号 1 的密码"},{"userName":"账号 2","password":"账号 2 的密码"}]
 ![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/accounts.jpg)
 
 如果你遇到你账号密码中有特殊字符如#$等无法解析的[SyntaxError](https://github.com/wes-lin/Cloud189Checkin/issues/76),请在你的配置中将TY_ACCOUNTS用单引号包起来
